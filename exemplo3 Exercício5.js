@@ -13,5 +13,8 @@ function calculaPesoIdeal() {
   
 
   document.getElementById("result").innerHTML= pesoIdeal.toFixed(2);
-  
 }
+  function limpar(){
+  document.getElementById("result").innerHTML="";  
+  }
+
