@@ -8,6 +8,7 @@ function calculaPesoIdeal() {
   } else {
     pesoIdeal = 62.1 * altura - 44;
   }
+  
 
   document.getElementById("result").innerHTML= pesoIdeal;
   
