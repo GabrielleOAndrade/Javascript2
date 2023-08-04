@@ -29,7 +29,7 @@ function mediaNotas() {
 
 
   //aprovado *se* media for maior ou igual a 6 senão reprovado
-  if (media >= 6) {
+  if (media>=6) {
     document.getElementById("status").innerHTML = "APROVADO";
   } else if (media>=5){
     document.getElementById("status").innerHTML = "RECUPERAÇÃO";

@@ -8,6 +8,9 @@
 <body>
     <h1> Resultado da Soma de 7+6:<h1>
     <p id="demo"></p>
+    <h2>Seu nome é</h2>
+    <p id="meuNome"></p>
+
     <script>
         console.log('Olá Mundo')
         document.write('Meu nome é Gabrielle Andrade')
@@ -15,12 +18,14 @@
         document.getElementByid('demo').innerHtml = 7 + 6
 
         //variáveis
-        let nome;
+        let nome = 'Mara'; //String
         let idade;
         const cidade = 'Catalão' = // operador ou atribuição
         nome = 'Gabrielle Andrade'
         nome = 'José'
         nome = 45
+        document.getElementById('meuNome').innerHTML=nome
+        let ehAluno = true //Booleano: verdadeiro| false
 
     </script>
 </body>
