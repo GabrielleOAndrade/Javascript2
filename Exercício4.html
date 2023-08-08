@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+   <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="text-center">Sistema De Verificação Se A Palavra é um Palíndromo</h1>
+
+    <form class="bg-info-subtle rounded p-2">
+      <label class="form-label fw-bold" for="palavra">Sistema De Verificação Se a Palavra é Um Palíndromo</label>
+      <input 
+      type="text" 
+      id="palavra" 
+      class="form-control" 
+      placeholder="Digite a Palavra"
+       />
+      <br />
+     
+    <div class="d-flex justify-content-between">
+        <input
+        type="button"
+        value="Verificar"
+        class="btn btn-secondary mt-3"
+        onclick="verificar()"
+        />
+        <input 
+        type="reset" 
+        class="btn btn-danger mt-3" 
+        value="Limpar"
+        onclick="limpar()"/>
+
+        </div>
+        </form>
+        <hr />
+        <p class="text-center mt-3">
+        <strong>Sistema De Verificação Se a Palavra é um Palíndromo?:</strong>
+        <span class="badge bg-info fs-4" id="result"></span>
+        </p>
+        <script src="exemplo4.js"></script>
+  </body>
+</html>
