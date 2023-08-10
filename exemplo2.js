@@ -1,52 +1,47 @@
-function mensagem() {
-  const nome = "Gabrielle Andrade";
-  document.write("Seja Bem Vindo" + nome); //contatenar - juntar textos
-}
+function cadastrar() {
+  const nome = document.getElementById("nome").value;
+  //ex: 5 == '5' true; 5 === '5' - false
+  // typeof(palavra) = verifica o tipo de yna variável constante
+  const idade = document.getElementById("idade").value;
+  const email = document.getElementById("email").value;
 
-function soma(num1, num2) {
-  document.write(`A soma de ${num1} e ${num2} é: ${num1 + num2}`);
-}
-function mult(num1, num2) {
-  return num1 * num2;
-}
+  const pessoa ={
+    nome: nome,
+    idade: idade,
+    email: email,
+  };
+  document.getElementById('result').innerHTML = pessoa.nome + '<br>'
+  + pessoa.idade + "<br>" + pessoa.email;
+ };
 
-function mediaNotas() {
-  const valor1 = parseFloat(document.getElementById("valor1").value);
-  if(isNaN(valor1)){
-    document.getElementById("result").innerHTML = "Nota não informada";
-  }
-  const valor2 = parseFloat(document.getElementById("valor2").value);
-  if(isNaN(valor2)){
-    document.getElementById("result").innerHTML = "Nota não informada";
-  }
-  const media = (valor1 + valor2) / 2;
-  if(isNaN(media)){
-    document.getElementById("status").innerHTML = "";
-  } else {
-    document.getElementById("result").innerHTML = media;
-  }
+ const telefones = ["64 9 9987-4100", "62 9 9654-7845"]
+ 
+ const produtos = [
+  { nome:"TV", quantidae: 10, preco: 2500.78},
+  { nome:"celular", quantidade: 5, preco: 2900.45 }
+  { nome: "Notebook", quantidade: 3, preco: 3500.89 }
+  { nome: "Computador", quantidade: 10, preco: 2871.45 }
+
+ ];
+
+ document.getElementById("result").innerHTML =
+ pessoa.nome +
+ "<br>" +
+ pessoa.idade +
+ "<br>" +
+ pessoa.email +
+ "<br>" +
+ telefones [0] +
+ "<br>" +
+ produtos[2].nome;
+
+ let lista = '';
+
+ for (let i =0; i < produtos.length; i++) {
+  lista += produtos[i].nome; //lista = lista + produtos[i]
   
 
+ }
 
-  //aprovado *se* media for maior ou igual a 6 senão reprovado
-  if (media>=6) {
-    document.getElementById("status").innerHTML = "APROVADO";
-  } else if (media>=5){
-    document.getElementById("status").innerHTML = "RECUPERAÇÃO";
-  } else {
-    document.getElementById("status").innerHTML = "REPROVADO";
-  }
-}
-function limpar (){
-    document.getElementById("result").innerHTML = "";
-    document.getElementById("status").innerHTML = "";
-}
 
-// let result = mult (4,5)
-// mensagem()
-// document.writer('<br>')
-// soma(10, 15)
-// document.writer('<br>');
-// soma(5, 10)
-// document.write('<br>');
-// document.write(mult(5,10))
+document.getElementById("result").innerHTML = lista 

@@ -35,6 +35,7 @@ function cadastrar() {
  "<br>" +
  produtos[2].nome;
 
+document.getElementById("result").innerHTML = lista 
 
  function limpar() {
   document.getElementById("result").innerHTML = "";
